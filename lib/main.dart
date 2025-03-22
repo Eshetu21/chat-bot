@@ -1,4 +1,5 @@
 import 'package:chat_bot/on_boarding.dart';
+import 'package:chat_bot/theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,7 +11,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: OnBoarding());
+    return MaterialApp(
+      theme: AppTheme.lightThemeMode,
+      debugShowCheckedModeBanner: false,
+      home: OnBoarding(),
+    );
   }
 }
 
