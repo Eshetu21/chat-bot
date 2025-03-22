@@ -1,5 +1,5 @@
 import 'package:chat_bot/on_boarding.dart';
-import 'package:chat_bot/theme.dart';
+import 'package:chat_bot/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {

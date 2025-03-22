@@ -1,3 +1,4 @@
+import 'package:chat_bot/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -15,7 +16,7 @@ class OnBoarding extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          systemOverlayStyle: SystemUiOverlayStyle.dark,
+          systemOverlayStyle: SystemUiOverlayStyle.light,
         ),
         body: Container(
           margin: EdgeInsets.all(25),
@@ -41,7 +42,9 @@ class OnBoarding extends StatelessWidget {
               SizedBox(height: MediaQuery.of(context).size.height * 0.1),
               GestureDetector(
                 onTap: () {
-                  // Handle button press
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) => HomePage()),
+                  );
                 },
                 child: Container(
                   padding: EdgeInsets.all(16),
@@ -76,4 +79,3 @@ class OnBoarding extends StatelessWidget {
     );
   }
 }
-
